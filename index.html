@@ -2,14 +2,153 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Desenvolvimento de softwares (sistemas) para sua empresa e desenvolvimento de sites e aplicativos em geral.">
+    <meta name="keywords"
+        content="argus,computação,engenharia,vitória da conquista,software,sistema,personalizado,bertoldi,tecnologia,web,site,cronos,projetos,auto escola,aplicativos,android,ios">
+    <META NAME="LANGUAGE" CONTENT="pt-br">
+    <META NAME="ROBOT" CONTENT="Index,Follow">
+    <meta name="author" content="arguscomputacao">
+    <title>Brenda Fernanda - Psicóloga</title>
+    <link rel="icon" href="https://arguscdn.nyc3.cdn.digitaloceanspaces.com/arguscomputacao-site/img/logo/favicon.png">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link href="tailwind.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="w-screen antialiased">
 
+    <header class="lg:px-16 px-6 bg-transparent flex flex-wrap items-center fixed py-2 w-full">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#">
+                <img src="assets/img/logo.png" class="header-logo">
+            </a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg></label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+            <nav>
+                <ul
+                    class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 font-bold color-primary">
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                            href="#">Sobre mim</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                            href="#">Serviços</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
+                            href="#">(77) 991653808</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section id="hero" class="w-full bg-white flex">
+        <div class="w-3/5 h-full flex ">
+            <div class="w-full h-full relative flex justify-center content-center ">
+                <div class=" h-auto my-auto">
+                    <div class="text-5xl font-extrabold">
+                        <h1 class=" inline color-primary">Olá! Sou </h1>
+                        <h1 class="inline color-complementary">Brenda Fernanda</h1>
+                        <h1 class="color-primary  mt-4">Mestre Psicóloga</h1>
+                    </div>
+                    <div class="text-xl mt-9">
+                        <button class="bg-complementary rounded-full  px-6 py-3 ">
+                            Entre em contato
+                        </button>
+                    </div>
+                    <div class="mt-9">
+                        <nav>
+                            <ul class="flex items-center text-base pt-4 lg:pt-0 font-bold color-primary">
+                                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent lg:mb-0 mb-2"
+                                        href="#">(77) 991653808</a>
+                                </li>
+                                <li>
+                                    <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent "
+                                        href="#">brendafernanda@gmail.com</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="w-2/5 h-full flex hero-info bg-complementary-light">
+            <div class=" w-full items-end flex">
+                <img src="assets/img/brenda3.png" alt="Rosto de Brenda Fernanda" class="mx-auto px-3 hero-img">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="detail" class="w-full h-full flex flex-col  items-center justify-center my-16">
+        <div class="w-full my-16 text-center  items-center justify-center flex">
+            <span class="colored-line mr-3"></span>
+            <h4 class="text-4xl font-extrabold color-primary"> Meus Serviços</h4>
+            <span class="colored-line ml-3"></span>
+        </div>
+        <div class="w-3/5 grid grid-cols-1 md:grid-cols-3 gap-8 service-grid">
+
+            <div class="rounded-2xl p-5 shadow-md">
+                <img src="/assets/img/atendimento-presencial.png" alt="Chapeu de graduação"
+                    class="w-full h-auto service-card-img">
+                <div class="text-center my-9">
+                    <h5 class="font-bold color-primary text-2xl">Atendimento<br>Presencial</h5>
+                </div>
+                <div class="w-full mt-3">
+                    Algum texto, algum texto algum texto algum texto algum textoalgum texto algum texto abc.
+                    texto algum texto algum textoalgum texto texto algum texto algum textoalgum texto 
+                </div>
+            </div>
+
+            <div class="rounded-2xl p-5 shadow-md">
+                <img src="/assets/img/atendimento-online.png" alt="Chapeu de graduação"
+                    class="w-full h-auto service-card-img">
+                <div class="text-center my-9">
+                    <h5 class="font-bold color-primary text-2xl">Atendimento<br>Online</h5>
+                </div>
+                <div class="w-full mt-3">
+                    Algum texto, algum texto algum texto algum texto algum textoalgum texto algum texto abc.
+                    texto algum texto algum textoalgum texto texto algum texto algum textoalgum texto 
+                </div>
+            </div>
+
+            <div class="rounded-2xl p-5 shadow-md">
+                <img src="/assets/img/atendimento-social.png" alt="Chapeu de graduação"
+                    class="w-full h-auto service-card-img">
+                <div class="text-center my-9">
+                    <h5 class="font-bold color-primary text-2xl">Atendimento<br>Social</h5>
+                </div>
+                <div class="w-full mt-3">
+                    Algum texto, algum texto algum texto algum texto algum textoalgum texto algum texto abc.
+                    texto algum texto algum textoalgum texto texto algum texto algum textoalgum texto 
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous">
+    </script> -->
 </body>
 
 </html>
